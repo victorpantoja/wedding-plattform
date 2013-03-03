@@ -5,6 +5,10 @@ clean:
 	find . -name '*.pyc' | xargs rm -f
 	rm -rf build
 
+setup:
+	@echo "Installing dependencies..."
+	@pip install -r requirements.txt
+
 start:
 	PYTHONPATH=`pwd`:`pwd`/wedding_plattform python wedding_plattform/server.py ${PORT}
 
