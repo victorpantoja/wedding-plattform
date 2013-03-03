@@ -78,3 +78,10 @@
     </div>
 </section>
 {% end %}
+
+{% block js_bottom %}
+<script>
+$("a.active").removeClass("active");
+$($(".menu li a")[3]).addClass("active");
+</script>
+{% end %}

@@ -20,7 +20,7 @@
                                         <textarea></textarea>
                                         <div class="clear"></div>
                                         <div class="buttons">
-                                            <a class="link-1" href="#" onClick="document.getElementById('contact-form').reset()">Clear</a>
+                                            <a class="link-1" href="#" onClick="document.getElementById('contact-form').reset(); return false">Clear</a>
                                             <a class="link-1" href="#" onClick="document.getElementById('contact-form').submit()">Send</a>
                                         </div> 
                                     </div>
@@ -50,5 +50,10 @@
         </div>
     </div>
 </section>
-
+{% block js_bottom %}
+<script>
+$("a.active").removeClass("active");
+$($(".menu li a")[4]).addClass("active");
+</script>
+{% end %}
 {% end %}

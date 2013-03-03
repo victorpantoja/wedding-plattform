@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Mensagem Enviada com Sucesso!{% end %}
+
+{% block content %}
+<!--==============================content================================-->
+<section id="content"><div class="ic"></div>
+	<div class="main">
+        <div class="container_12">
+			Obrigado {{name}}! Sua mensagem foi enviada aos noivos!
+		</div>
+	</div>
+</section>
+{% end %}
+
+{% block js_bottom %}
+<script>
+$("a.active").removeClass("active");
+$($(".menu li a")[4]).addClass("active");
+</script>
+{% end %}
