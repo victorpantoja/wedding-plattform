@@ -7,7 +7,7 @@ clean:
 
 setup:
 	@echo "Installing dependencies..."
-	@pip install -r requirements.txt
+	@pip install -r requirements-dev.txt
 
 start:
 	PYTHONPATH=`pwd`:`pwd`/wedding_plattform python wedding_plattform/server.py ${PORT}
