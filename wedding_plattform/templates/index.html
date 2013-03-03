@@ -99,9 +99,9 @@ Veritatis et quasi architecto beatae vitae dicta sunt expli cabo. Nemo enim ipsa
 {% end %}
 
 {% block js_bottom %}
-$("a.active").removeClass("active");
-$($(".menu li a")[0]).addClass("active");
 <script type="text/javascript">
+	$("a.active").removeClass("active");
+	$($(".menu li a")[0]).addClass("active");
 	$(window).load(function() {
 		$('.slider')._TMS({
 			duration:1000,

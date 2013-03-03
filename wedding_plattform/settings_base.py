@@ -37,3 +37,8 @@ MEMCACHE = {
     'servers': ('localhost:11211',),
     'socket_timeout': 1,
 }
+
+EMAIL = {
+    "server": "smtp.gmail.com",
+    "port": 587,
+}
