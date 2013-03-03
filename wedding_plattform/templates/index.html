@@ -97,3 +97,20 @@ Veritatis et quasi architecto beatae vitae dicta sunt expli cabo. Nemo enim ipsa
     </div>
 </section>
 {% end %}
+
+{% block js_bottom %}
+<script type="text/javascript">
+	$(window).load(function() {
+		$('.slider')._TMS({
+			duration:1000,
+			easing:'easeOutQuint',
+			preset:'slideDown',
+			slideshow:7000,
+			banners:false,
+			pauseOnHover:true,
+			pagination:true,
+			pagNums:false
+		});
+	});
+</script>
+{% end %}
