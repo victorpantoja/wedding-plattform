@@ -5,6 +5,9 @@ clean:
 	find . -name '*.pyc' | xargs rm -f
 	rm -rf build
 
+deploy:
+	fab -i ~/Downloads/victorpantoja.pem prod deploy
+
 setup:
 	@echo "Installing dependencies..."
 	@pip install -r requirements-dev.txt
