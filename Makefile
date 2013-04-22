@@ -5,7 +5,7 @@ clean:
 	find . -name '*.pyc' | xargs rm -f
 	rm -rf build
 
-deploy:
+deploy-prod:
 	fab -i ~/Downloads/victorpantoja.pem prod deploy
 
 setup:

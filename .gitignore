@@ -36,3 +36,5 @@ nosetests.xml
 
 # Amazon
 *.cfg
+
+.DS_Store
