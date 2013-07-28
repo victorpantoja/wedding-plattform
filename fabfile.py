@@ -44,6 +44,8 @@ def setup():
         '/etc/init/wedding_plattform.conf', use_sudo=True)
     put(os.path.join(LOCAL_DIR, 'deploy', 'nginx-site.conf'),
         '/etc/nginx/sites-enabled/wedding_plattform.conf', use_sudo=True)
+    put(os.path.join(LOCAL_DIR, 'deploy', 'boto.cfg'),
+        '/etc/boto.cfg', use_sudo=True)
     sudo('rm -f /etc/nginx/sites-enabled/default')
     execute(nginx, 'restart')
 
