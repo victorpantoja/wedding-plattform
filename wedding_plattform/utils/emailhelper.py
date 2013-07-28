@@ -46,13 +46,12 @@ class EmailHelper:
         mailServer.ehlo()
         mailServer.starttls()
         mailServer.ehlo()
-        mailServer.login("mobile.social.share@gmail.com", "mss_29/11/1983")
-        mailServer.sendmail("victor.pantoja@gmail.com", destinatario, mensagem)
+        mailServer.login(settings.AWS_ACCESS_KEY_ID, settings.AWS_SECRET_ACCESS_KEY)
+        mailServer.sendmail(settings.EMAIL['sender'], destinatario, mensagem)
         mailServer.close()
 
     @staticmethod
     def validateEmail(email):
-
         if len(email) > 7:
             if re.match("^.+\\@(\\[?)[a-zA-Z0-9\\-\\.]+\\.([a-zA-Z]{2,3}|[0-9]{1,3})(\\]?)$", email) != None:
                 return True

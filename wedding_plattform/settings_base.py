@@ -33,6 +33,9 @@ LOGGING = {
     },
 }
 
+AWS_ACCESS_KEY_ID = ""
+AWS_SECRET_ACCESS_KEY = ""
+
 MEMCACHE = {
     'servers': ('localhost:11211',),
     'socket_timeout': 1,
@@ -41,4 +44,5 @@ MEMCACHE = {
 EMAIL = {
     "server": "email-smtp.us-east-1.amazonaws.com",
     "port": 587,
+    "sender": "victor.pantoja@gmail.com"
 }
