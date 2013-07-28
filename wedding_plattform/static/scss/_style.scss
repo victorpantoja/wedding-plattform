@@ -125,7 +125,7 @@ h1 {
 	padding:1px 0 5px;
 	background:url(../images/menu-row-tail.png) center top repeat-x;
 }
-	#page1 .menu-row {margin-bottom:22px;}
+
 .menu {width:100%; background:url(../images/menu-spacer.gif) left top no-repeat; overflow:hidden;}
 .menu li {
 	float:left; 
@@ -153,7 +153,6 @@ h1 {
 	width:952px;
 	height:516px;
 	padding:54px 0 0 32px;
-	background:url(../images/slider-bg.png) 0 0 no-repeat;
 	overflow:hidden;
 }
 .slider {
@@ -164,8 +163,8 @@ h1 {
 
 .pagination {
 	position:absolute;
-	left:418px;
-	bottom:-62px;
+	left:355px;
+	bottom:-35px;
 	z-index:99;
 }
 	.pagination li {
