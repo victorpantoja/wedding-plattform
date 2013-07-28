@@ -31,13 +31,11 @@
         <div class="container_12">
             <div class="wrapper">
                 <article class="grid_8">
-                	<!-- <div class="indent-right">
-                        <h2 class="indent-bot2">Mensagem dos Noivos</h2>
+                	<div class="indent-right">
+                        <h2 class="indent-bot2">Mensagens aos Noivos</h2>
+						{% for message in messages %}
                         <div class="wrapper p3">
-                            <figure class="img-indent">
-                                <p class="p1"><a href="#"><img class="img-border1" src="/static/images/noiva.png" alt="Mariana"></a><span class="clear"></span></p>
-                                <span class="text-1">Mariana</span>
-                            </figure>
+							<span class="text-1">{{message.name}}</span>
                             <div class="extra-wrap">
                                 <blockquote class="q1">
                                 	<span class="quote-marker1"></span>
@@ -45,8 +43,7 @@
                                         <div class="quote-top">
                                             <div class="quote">
                                                 <div class="padding">
-                                                    <p class="p2">&quot;...sed ut perspiciatis unde omnis iste natus error volup tatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
-Veritatis et quasi architecto beatae vitae dicta sunt expli cabo. Nemo enim ipsam voluptatem...&quot;
+                                                    <p class="p2">&quot;{{message.message}}&quot;
                                                 </div>
                                             </div>
                                         </div>
@@ -54,30 +51,8 @@ Veritatis et quasi architecto beatae vitae dicta sunt expli cabo. Nemo enim ipsa
                                 </blockquote>
                             </div>
                         </div>
-                        <div class="wrapper img-indent-bot">
-                            <figure class="img-indent-r">
-                                <p class="p1"><a href="#"><img class="img-border1" src="https://pt.gravatar.com/avatar/2c3ac8de0cdba5c5ea309275e3483c40?s=140" alt=""></a><span class="clear"></span></p>
-                                <div class="alignright">
-                                	<span class="text-1">Victor</span>
-                                </div>
-                            </figure>
-                            <div class="extra-wrap">
-                                <blockquote class="q2">
-                                	<span class="quote-marker2"></span>
-                                    <div class="quote-bot">
-                                        <div class="quote-top">
-                                            <div class="quote">
-                                                <div class="padding">
-                                                    <p>&quot;Quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos.</p>
-                                                    Qui ratione voluptatem sequi nesciunt neque poruisquam est, qui dolorem ipsum quia dolor sit amet, consectetur adipisci velit.&quot;
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </blockquote>
-                            </div>
-                        </div>
-                    </div> -->
+						{% end %}
+                    </div>
                 	<div class="indent-right">
 					<h2 class="indent-bot2">Breve História</h2>
 					<p>Nós nos conhecemos em uma improvável sexta-feira...</p>
