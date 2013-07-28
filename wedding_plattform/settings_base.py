@@ -39,6 +39,6 @@ MEMCACHE = {
 }
 
 EMAIL = {
-    "server": "smtp.gmail.com",
+    "server": "email-smtp.us-east-1.amazonaws.com",
     "port": 587,
 }
