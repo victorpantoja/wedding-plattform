@@ -39,7 +39,7 @@ class ContactsHandler(RequestHandler):
                 strFrom='Wedding Plattform <mobile.social.share@gmail.com>',
                 subject="[Wedding Plattform] You've Just Receveid a New Message!")
 
-            #EmailHelper.enviar(mensagem=mensagem, destinatario="victor.pantoja@gmail.com")
+            EmailHelper.enviar(mensagem=mensagem, destinatario="victor.pantoja@gmail.com")
         except SMTPException, e:
             logging.exception(str(e))
 
