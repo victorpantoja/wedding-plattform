@@ -2,6 +2,8 @@ from settings_base import *
 
 PORT = 9080
 
+SERVER_NAME = 'http://marievictor.com'
+
 LOGGING['root']['handlers'] = ['file']
 LOGGING['handlers']['file'] = {
     'level': 'INFO',

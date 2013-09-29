@@ -1,18 +1,26 @@
 # coding: utf-8
-from smtplib import SMTPException
 from tornado.web import RequestHandler
-from wedding_plattform.utils.emailhelper import EmailHelper
+from smtplib import SMTPException
+from wedding_plattform import settings
 from wedding_plattform.models.message import Message
+from wedding_plattform.utils.emailhelper import EmailHelper
 
 import logging
 
 
-class ContactsHandler(RequestHandler):
+class PageHandler(RequestHandler):
 
-    def get(self):
-        self.render("contacts.html")
+    def get(self, **kwargs):
+        messages = Message.all()
 
-    def post(self):
+        if kwargs.get('context'):
+            self.render("%s.html" % kwargs['context'],
+                        SERVER_NAME=settings.SERVER_NAME)
+        else:
+            self.render("index.html", SERVER_NAME=settings.SERVER_NAME,
+                        messages=messages)
+                        
+    def post(self, **kwargs):
         email = self.request.arguments['p2'][0]
         name = self.request.arguments['p1'][0]
         message = self.request.arguments['message'][0]
