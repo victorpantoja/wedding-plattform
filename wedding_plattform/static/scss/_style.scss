@@ -17,7 +17,7 @@ body {font-family:Arial, Helvetica, sans-serif;font-size:100%;color:#000;min-wid
 	line-height:25px;
 } 
 
-a {color:#f00058; outline:none;}
+a {color:#5f021f; outline:none;}
 a:hover {text-decoration:none;}
 
 .col-1, .col-2 {float:left;}
@@ -42,7 +42,7 @@ p {margin-bottom:18px;}
 
 .it {font-style:italic;}
 
-.color-1 {color:#f00058;}
+.color-1 {color:#5f021f;}
 .color-2 {color:#7c7c7c;}
 
 .img-border1 {
@@ -89,15 +89,17 @@ header {
 }
 
 h1 {
-	padding:36px 0 0 22px; 
+	padding: 36px 0 0 22px;
 	position:relative;
 	overflow:hidden;
-	margin-bottom:27px;
+	margin-bottom: 10px;
     font-family: 'Italianno', cursive;
-    font-size: 80px;
+    font-size: 72px;
+  line-height: 72px;
+  height: 50px;
 }
 	h1 a {
-	    color: #f00058;
+	    color: #5f021f;
 		display:block;
 		width:227px;
 		height:68px;
@@ -146,7 +148,7 @@ h1 {
 }
 
 .menu li a.active,
-.menu > li > a:hover {background:url(../images/menu-active-tail.gif) 0 0 repeat-x #f00058;}
+.menu > li > a:hover {background:url(../images/menu-active-tail.jpg) 0 0 repeat-x #5f021f;}
 
 /***** slider *****/
 .slider-wrapper {
@@ -208,7 +210,7 @@ h3 {
 	color:#000;
 	margin-bottom:7px;
 }
-h6 {color:#f00058;}
+h6 {color:#5f021f;}
 
 .tdate-1 {
 	display:block;
@@ -497,13 +499,13 @@ ul.thumbs li.last {margin:0;}
 .list-1 li {
 	line-height:20px; 
 	padding:5px 0 5px 15px; 
-	background:url(../images/marker-1.gif) 0 12px no-repeat;
+	background:url(../images/marker-1.jpg) 0 12px no-repeat;
 }
 	.list-1 li a {
 		display:inline-block;
 		color:#7c7c7c;
 	}
-	.list-1 li a:hover {color:#f00058; text-decoration:underline;}
+	.list-1 li a:hover {color:#5f021f; text-decoration:underline;}
 
 .link:hover {text-decoration:underline;} 
 
@@ -511,11 +513,11 @@ ul.thumbs li.last {margin:0;}
 	display:inline-block; 
 	line-height:27px; 
 	padding-left:39px; 
-	background:url(../images/marker-2.gif) 0 0px no-repeat;
+	background:url(../images/marker-2.jpg) 0 0px no-repeat;
 }
 .link-1:hover {text-decoration:none;} 
 
-.text-1 {display:block; color:#f00058;} 
+.text-1 {display:block; color:#5f021f;} 
 .text-2 {display:block; color:#000; font-style:normal !important;}  
 
 dl span {float:left; width:98px; font-weight:bold;}
@@ -630,4 +632,9 @@ footer {
 		float: left;
 		width: 430px;
 	}
+}
+
+.monograma{
+  display: block;
+  float: left;
 }
