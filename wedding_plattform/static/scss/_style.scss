@@ -4,13 +4,12 @@ mark, rp, rt, ruby, summary, time {display:inline;}
 
 /* Global properties ======================================================== */
 html {width:100%;}
-body {font-family:Arial, Helvetica, sans-serif;font-size:100%;color:#000;min-width:984px;background:#f8f8f8}
-.ic {border:0;float:right;background:#fff;color:#f00;width:50%;line-height:10px;font-size:10px;margin:-220% 0 0 0;overflow:hidden;padding:0}
+body {font-family:Arial, Helvetica, sans-serif;font-size:100%;color:#666;min-width:984px;background:#f8f8f8}
 
 #page3 {min-width:1034px;}
 
 .main {
-	width:984px; 	
+	width:984px;
 	padding:0;
 	margin:0 auto;
 	font-size:14px;
@@ -120,19 +119,11 @@ h1 {
 		padding-top:31px;
 	}
 	
-	
-/***** menu *****/
-.menu-row {
-	width:100%;
-	padding:1px 0 5px;
-	background:url(../images/menu-row-tail.png) center top repeat-x;
-}
 
-.menu {width:100%; background:url(../images/menu-spacer.gif) left top no-repeat; overflow:hidden;}
+
 .menu li {
 	float:left; 
 	position:relative;
-	background:url(../images/menu-spacer.gif) right top no-repeat;
 }
 .menu li a {
 	display:inline-block; 
@@ -143,12 +134,15 @@ h1 {
 	font-weight:400;
 	line-height:59px; 
 	padding:0 55px; 
-	color:#fff; 
+	color: #5f021f;
 	text-transform:uppercase; 
 }
 
 .menu li a.active,
-.menu > li > a:hover {background:url(../images/menu-active-tail.jpg) 0 0 repeat-x #5f021f;}
+.menu > li > a:hover {
+  background-color: #5f021f;
+  color: #fff;
+}
 
 /***** slider *****/
 .slider-wrapper {
@@ -583,7 +577,7 @@ select.text-form{
 footer {
 	width:100%; 
 	padding:38px 0 50px;
-	background:url(../images/footer-tail.gif) center top repeat-x;
+	border-top: 1px solid #efefef;
 }
 
 .list-services {
