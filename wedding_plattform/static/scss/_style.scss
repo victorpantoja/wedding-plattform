@@ -6,6 +6,12 @@ mark, rp, rt, ruby, summary, time {display:inline;}
 html {width:100%;}
 body {font-family:Arial, Helvetica, sans-serif;font-size:100%;color:#666;min-width:984px;background:#f8f8f8}
 
+@font-face {
+  font-family: 'RegencyScriptFLF';
+  src: url('../fonts/RegencyScriptFLF.ttf') format('truetype');
+}
+
+
 #page3 {min-width:1034px;}
 
 .main {
@@ -92,16 +98,16 @@ h1 {
 	position:relative;
 	overflow:hidden;
 	margin-bottom: 10px;
-    font-family: 'Italianno', cursive;
+    font-family: 'RegencyScriptFLF';
     font-size: 72px;
   line-height: 72px;
-  height: 50px;
+  height: 60px;
 }
 	h1 a {
 	    color: #5f021f;
 		display:block;
 		width:227px;
-		height:68px;
+		height:60px;
 		float:left;
 		margin-right:18px;
 	}
@@ -631,4 +637,5 @@ footer {
 .monograma{
   display: block;
   float: left;
+  margin-top: 10px;
 }
